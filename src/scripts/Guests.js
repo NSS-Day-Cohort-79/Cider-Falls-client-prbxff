@@ -7,7 +7,7 @@ import { copyGuests } from "./database.js";
 
 const guests = copyGuests()
 
-export const guestHTML = () => {
+export const Guests = () => {
     let html = "<ul>"
 
     for (const guest of guests) {

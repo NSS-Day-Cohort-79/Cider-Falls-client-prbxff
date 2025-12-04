@@ -1,0 +1,22 @@
+``` mermaid
+sequenceDiagram
+
+Participant Database
+Participant Main
+Participant Park Area
+Participant Guest
+Participant Services
+Participant DOM
+
+Database-->>Services:Here is all the data for Services
+Database-->>Guest: Here is the data for Guest
+Database-->>Park Area: Here is the Park Area Data
+note over Services: Do something with data(create html)
+note over Guest:Do something with data(create html)
+note over Park Area:Do something with data (create html)
+Services-->>main:here is the finished HTML
+Guest-->>main: Here is the finished HTML
+Park Area-->>main: Here is the finished HTML
+main-->>DOM: here the the all put together HTML
+
+```

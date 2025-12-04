@@ -5,3 +5,23 @@
 //      -- create event listener, when a service is clicked, window alert of park areas where service is located
 
 import { copyServices } from "./database.js";
+
+const servicesData = getServices()
+
+export const Services = () => {
+    let servicesHTML = ``
+    servicesHTML += `<ul class="service">`
+
+    for (const service of servicesData) {
+        servicesHTML += `
+        <li class="service--item"
+            data-type="service" 
+            data-serviceid="${service.id}" 
+            data-serviceName="${service.serviceName}">${service.serviceName}</li>
+        `
+    }
+
+    servicesHTML += `</ul>`
+
+    return servicesHTML
+}

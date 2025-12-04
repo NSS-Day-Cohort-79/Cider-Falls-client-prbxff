@@ -5,3 +5,5 @@
 //  -- create html sections of the park areas and services for each area
 //      -- section title: park area name
 //      -- section list: services for that section
+
+import { copyParkAreas } from "./database.js";

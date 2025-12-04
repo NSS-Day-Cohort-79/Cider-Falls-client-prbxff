@@ -6,7 +6,19 @@
 
 import { copyServices } from "./database.js";
 
-const servicesData = getServices()
+document.addEventListener(
+    "click",
+    (click) => {
+        const clicked = click.target
+
+        if (clicked.dataset.type === "service") {
+            const serviceAreas = getServiceAreas()
+            // window.alert(`${clicked.dataset.serviceName} is available in ${get}`)
+        }
+    }
+)
+
+const servicesData = copyServices()
 
 export const Services = () => {
     let servicesHTML = ``

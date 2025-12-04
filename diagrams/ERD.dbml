@@ -13,6 +13,7 @@ Table Guests {
     id integer [PK]
     firstName varchar
     lastName varchar
+    areaId integer
 }
 
 Table AreaServices {
@@ -21,14 +22,7 @@ Table AreaServices {
     areaId integer
 }
 
-Table AreaGuest {
-    areaGuestId integer [PK]
-    areaId integer
-    guestId integer
-}
-
 Ref: Services.id < AreaServices.serviceId  
 Ref: ParkAreas.id < AreaServices.areaId
 
-Ref: ParkAreas.id < AreaGuest.areaId
-Ref: Guests.id < AreaGuest.guestId
+Ref: Guests.areaId > ParkAreas.id

@@ -11,11 +11,7 @@ export const guestHTML = () => {
     let html = "<ul>"
 
     for (const guest of guests) {
-        html += `<li
-        data-type="guest"
-        data-id="${guest.id}"
-        data-areaid="${guest.areaId}"
-        >${guest.firstName} ${guest.lastName}</li>`
+        html += `<li>${guest.firstName} ${guest.lastName}</li>`
     }
 
     html += "</ul>"

@@ -16,14 +16,24 @@ const mainContainer = document.querySelector("#container")
 
 const applicationHTML = `
     <header>
-        <img src="">
-        <h1>Cider Falls</h1>
+        <img src="" class="header--logo header logo">
+        <h1 class="header--title header title">Cider Falls National Park</h1>
     </header>
-
+    <nav class="services nav--services">${Services()}</nav>
     <article>
-    ${ParkAreas()}
+        <div class="main--areas areas left">
+            ${ParkAreas()}
+        </div>
+        <div class="main--guests guests right">
+            ${Guests()}
+        </div>
     </article>
 
-
-
+    <footer>
+        <span class="footer-phone footer-info">(123) 456 - 7890</span>
+        <span class="footer-email footer-info"><email>ciderfalls@nationalpark.com</email></span>
+        <span class="footer-address footer-info"><address>123 Cider Falls Street, Cider City, CF 01234</address></span>
+    </footer>
 `
+
+mainContainer.innerHTML = applicationHTML

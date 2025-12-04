@@ -267,3 +267,13 @@ export const copyGuests = () => {
     const copiedGuests = structuredClone(database.guests)
     return copiedGuests
 }
+
+export const copyServices = () => {
+    const copiedServices = structuredClone(database.services)
+    return copiedServices
+}
+
+export const copyParkAreas = () => {
+    const copiedParkAreas = structuredClone(database.parkAreas)
+    return copiedParkAreas
+}

@@ -262,3 +262,8 @@ const database = {
         }
     ]
 }
+
+export const copyGuests = () => {
+    const copiedGuests = structuredClone(database.guests)
+    return copiedGuests
+}

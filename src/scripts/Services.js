@@ -5,6 +5,8 @@
 //      -- create event listener, when a service is clicked, window alert of park areas where service is located
 
 import { copyServices } from "./database.js";
+import { copyParkAreas } from "./database.js";
+
 
 document.addEventListener(
     "click",
@@ -12,8 +14,8 @@ document.addEventListener(
         const clicked = click.target
 
         if (clicked.dataset.type === "service") {
-            const serviceAreas = getServiceAreas()
-            // window.alert(`${clicked.dataset.serviceName} is available in ${get}`)
+            const serviceAreas = getServiceAreas(clicked.dataset.serviceid)
+            window.alert(`${clicked.dataset.servicename} is available in ${serviceAreas.join(", ")}`)
         }
     }
 )
@@ -29,7 +31,7 @@ export const Services = () => {
         <li class="service--item"
             data-type="service" 
             data-serviceid="${service.id}" 
-            data-serviceName="${service.serviceName}">${service.serviceName}</li>
+            data-servicename="${service.serviceName}">${service.serviceName}</li>
         `
     }
 
@@ -37,3 +39,13 @@ export const Services = () => {
 
     return servicesHTML
 }
+
+// const getServiceAreas = (serviceIdDataset) => {
+//     const parkAreas = copyParkAreas();
+//     const serviceIdDatasetInt = parseInt(serviceIdDataset)
+//     let parkAreasWithService = []
+//     for (const area of parkAreas) {
+//         if (area.service.contains(serviceIdDatasetInt))
+//     }
+//     return parkAreasWithService
+// }

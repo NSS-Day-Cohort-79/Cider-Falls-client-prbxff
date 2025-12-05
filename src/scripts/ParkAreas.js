@@ -12,9 +12,20 @@ const parks = copyParkAreas()
 const services = copyServices()
 const guests = copyGuests()
 
-/*document.addEventListener("click", (clickEvent) => {
+document.addEventListener("click", (clickEvent) => {
+    const parkClicked = clickEvent.target
 
-})*/
+    if (parkClicked.dataset.type === "park") {
+        let count = 0
+        for (const guest of guests) {
+            if (parseInt(parkClicked.dataset.parkid) === guest.areaId) {
+                count++
+            }
+        }
+
+        window.alert(`This area has ${count} guests`)
+    }
+})
 
 export const ParkAreas = () => {
     let html = "<ul>"

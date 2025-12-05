@@ -15,8 +15,8 @@ import { Guests } from "./Guests.js"
 const mainContainer = document.querySelector("#container")
 
 const applicationHTML = `
-    <header>
-        <img src="" class="header--logo header logo">
+    <header class="header header-content">
+        <img src="https://creator.nightcafe.studio/jobs/TsePm32vPZFkdyj7cvon/TsePm32vPZFkdyj7cvon--1--jl1q5.jpg" class="header--logo header logo park-logo">
         <h1 class="header--title header title">Cider Falls National Park</h1>
     </header>
     <nav class="services nav--services">${Services()}</nav>

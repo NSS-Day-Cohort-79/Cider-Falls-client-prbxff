@@ -28,17 +28,17 @@ document.addEventListener("click", (clickEvent) => {
 })
 
 export const ParkAreas = () => {
-    let html = "<ul>"
+    let html = `<ul class="park-container">`
 
     for (const park of parks) {
-        html += `<h3
+        html += `<h3 class="park-title"
         data-type="park"
         data-parkid="${park.id}"
         >${park.areaName}</h3>`
 
         for (const service of services) {
             if (park.service.includes(service.id)) {
-                html += `<li>${service.serviceName}</li>`
+                html += `<li class="park--service">${service.serviceName}</li>`
             }
         }
     }

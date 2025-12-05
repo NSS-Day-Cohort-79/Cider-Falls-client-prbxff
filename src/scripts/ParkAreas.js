@@ -31,7 +31,7 @@ export const ParkAreas = () => {
     let html = `<ul class="park-container">`
 
     for (const park of parks) {
-        html += `<h3 class="park-title"
+        html += `<div class="park-div-container"><h3 class="park-title"
         data-type="park"
         data-parkid="${park.id}"
         >${park.areaName}</h3>`
@@ -41,6 +41,7 @@ export const ParkAreas = () => {
                 html += `<li class="park--service">${service.serviceName}</li>`
             }
         }
+        html += `</div>`
     }
 
     html += "</ul>"

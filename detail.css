@@ -1,0 +1,162 @@
+{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #ccc;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .park-logo {
+            width: 60px;
+            height: 60px;
+            border: 2px solid #333;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .park-name {
+            flex: 1;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-arrows {
+            display: flex;
+            gap: 20px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .main-content {
+            flex: 2;
+            background-color: #ffffff;
+            padding: 20px;
+            border: 2px solid #333;
+        }
+
+        .services-title {
+            background-color: #ffffff;
+            padding: 10px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            border: 1px solid #333;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .service-card {
+            background-color: #ffffff;
+            border: 2px solid #333;
+            padding: 15px;
+            min-height: 120px;
+        }
+
+        .service-name {
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-decoration: underline;
+        }
+
+        .service-activities {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .guest-names {
+            flex: 1;
+            background-color: #ffffff;
+            padding: 20px;
+            border: 3px solid #ffffff;
+        }
+
+        .guest-title {
+            font-weight: bold;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #333;
+        }
+
+        .guest-list {
+            min-height: 200px;
+            background-color: #ffffff;
+            padding: 10px;
+            border: 1px solid #333;
+            margin-bottom: 15px;
+        }
+
+        .guest-item {
+            padding: 8px;
+            border-bottom: 1px solid #ffffff;
+            cursor: pointer;
+        }
+
+        .guest-item:hover {
+            background-color: #ffffff;
+        }
+
+        .footer {
+            background-color: #ffffff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            border: 2px solid #333;
+            margin: 20px;
+        }
+
+        .footer-item {
+            flex: 1;
+            text-align: center;
+            border-right: 2px solid #333;
+        }
+
+        .footer-item:last-child {
+            border-right: none;
+        }
+
+        .alert {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #FFE4E1;
+            border: 2px solid #FF6B9D;
+            padding: 15px;
+            border-radius: 5px;
+            display: none;
+            z-index: 1000;
+        }
+
+        .alert.show

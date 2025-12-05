@@ -37,7 +37,7 @@ export const ParkAreas = () => {
         >${park.areaName}</h3>`
 
         for (const service of services) {
-            if (service.id === park.service[0] || service.id === park.service[1] || service.id === park.service[2]) {
+            if (park.service.includes(service.id)) {
                 html += `<li>${service.serviceName}</li>`
             }
         }

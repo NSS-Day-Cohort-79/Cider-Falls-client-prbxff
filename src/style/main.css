@@ -1,0 +1,44 @@
+main {
+	height: 100vh;
+}
+header{
+	text-align: center;
+}
+header img {
+	max-width: 200px;
+	
+}
+.left {
+	float: left;
+	margin-right: 20px;
+	width: 60%;
+}
+.right {
+	float: right;
+	margin-left: 20px;
+	width: 35%;
+}
+.service {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+footer {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+.park-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex-basis: 30%;
+	justify-content: space-evenly;
+	gap: 20px 20px;
+}
+.park-div-container {
+	width: 300px;
+	height: 350px;
+}

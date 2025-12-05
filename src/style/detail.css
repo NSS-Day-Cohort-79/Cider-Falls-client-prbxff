@@ -1,0 +1,25 @@
+li {
+    list-style: none;
+}
+.park-div-container {
+    text-align: center;
+    border: 5px solid #000000;
+}
+
+li {
+    list-style: none;
+
+}
+
+
+body {
+    background-image: url(https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGF5cmIwMTltaGsyczBzcjBkeTZiMnh0MGt6NnM2bHBqa243dmx6NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/uSlkwemszvnTq/giphy.gif);
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: center center;
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.7);
+}
+
+body {
+    font-size: 150%;
+}

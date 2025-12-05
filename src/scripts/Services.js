@@ -40,12 +40,15 @@ export const Services = () => {
     return servicesHTML
 }
 
-// const getServiceAreas = (serviceIdDataset) => {
-//     const parkAreas = copyParkAreas();
-//     const serviceIdDatasetInt = parseInt(serviceIdDataset)
-//     let parkAreasWithService = []
-//     for (const area of parkAreas) {
-//         if (area.service.contains(serviceIdDatasetInt))
-//     }
-//     return parkAreasWithService
-// }
+const getServiceAreas = (serviceIdDataset) => {
+    const parkAreas = copyParkAreas();
+    const serviceIdDatasetInt = parseInt(serviceIdDataset)
+    let parkAreasWithService = []
+
+    for (const area of parkAreas) {
+        if (area.service.includes(serviceIdDatasetInt)) {
+            parkAreasWithService.push(area.areaName)
+        }
+    }
+    return parkAreasWithService
+}
